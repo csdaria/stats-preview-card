@@ -20,7 +20,7 @@ body{
 .main{
     margin: 2rem auto;
     width:380px;
-    height:1000px;
+    height:1050px;
     background-color: gray;
     border-radius: 1rem;
     background-color: var(--darkDesaturatedBlueCardBackground);
@@ -59,7 +59,42 @@ span{
 }
 
 .words{
-    
     text-transform: uppercase;
     letter-spacing: 0.2;
 }
+
+@media (min-width: 1440px){
+    .main{
+    display: flex;
+    flex-direction: row-reverse;
+    width:1200px;
+    height:550px;
+    border-radius: none
+    }
+
+    .main-image{
+        height:750px;
+        width:800px; 
+        border-radius: none;
+    }
+
+    .content{
+        width:50%;
+    }
+
+    .stats{
+        display:flex;
+        flex-direction:inline-block;
+        
+    }
+
+    h1, h2, p{
+        margin: 3rem;
+        text-align: left;
+        max-height: 200px;
+        
+    }
+
+
+
+} 
